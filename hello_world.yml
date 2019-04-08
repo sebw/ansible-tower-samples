@@ -3,5 +3,5 @@
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello World! My name is {{ inventory_hostname }}"
+        msg: "Hello World! This is the develop branch. My name is {{ inventory_hostname }}"
 
