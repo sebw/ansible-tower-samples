@@ -2,5 +2,5 @@
 - name: notification failure
   hosts: localhost
   tasks:
-    debug:
-    msg: Failure
+    - debug:
+      msg: Failure
