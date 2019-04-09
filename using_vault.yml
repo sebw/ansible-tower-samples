@@ -1,0 +1,8 @@
+---
+- name: use vault
+  vars_files:
+  - vault.yml
+  hosts: localhost
+  tasks:
+    - debug:
+        msg: "{{ password }}"
