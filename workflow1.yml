@@ -6,8 +6,7 @@
       debug: 
         msg: like displaying a message
 
-    - name:
+    - name: set stats for next workflow
       set_stats:
         data:
           job_status: success
-
