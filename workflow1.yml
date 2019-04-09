@@ -6,7 +6,12 @@
       debug: 
         msg: like displaying a message
 
-    - name: set stats for next workflow
+    - name: set stats for next workflow to consume
       set_stats:
         data:
           job_status: success
+      register: stats
+
+    - name:
+      debug:
+        var: stats
