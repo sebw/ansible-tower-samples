@@ -1,0 +1,12 @@
+---
+- name: workflow1
+  hosts: all
+  tasks:
+    - name: do something simple that doesnt fail
+      debug: 
+        msg: like displaying a message
+
+    - name:
+      set_fact:
+        job_status: success
+

@@ -1,0 +1,12 @@
+---
+- name: treat the input
+  hosts: all
+  tasks:
+    - name: do something if job_status is success
+      debug:
+        msg: that was a success
+      when: job_status == "success"
+
+    - name: fail if job_status is failure
+      fail:
+      when: job_status == "failure"
