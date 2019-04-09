@@ -1,0 +1,6 @@
+---
+- name: notification success
+  hosts: localhost
+  tasks:
+    debug:
+      msg: Success!
